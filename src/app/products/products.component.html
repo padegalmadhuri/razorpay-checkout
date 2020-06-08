@@ -1,0 +1,25 @@
+
+<head>
+<meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+<h1 class="text-center">Z Shop</h1>
+
+<div class="container">
+    <div *ngFor="let item of productData;index as i">
+      <div class="card">
+      <div class="card-header">
+        {{item.product_name}}|{{item.product}}
+        </div>
+       <div class="card-body">
+        <p class="card-title">{{item.department}}</p>
+          <p class="card-text">Material:{{item.product_material}}</p>
+        <h3 class="card-text">{{item.product_price|currency:'INR'}}</h3>
+        <button class="btn btn-primary" (click)="initPay(item.product_price,item.id)" value="Pay with RazorPay">Buy</button>
+        </div>
+        </div>
+        <br>
+    </div>
+</div>
+</body>

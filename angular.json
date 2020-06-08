@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "razorpayangular"
+    }
+  },
+  "defaultProject": "razorpayangular",
+  "cli": {
+    "analytics": "68931332-39db-4061-8486-f890eb670306"
+  }
 }

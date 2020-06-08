@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProductsComponent } from './products/products.component';
+import { PaySuccessComponent } from './pay-success/pay-success.component';
 
+const routes: Routes = [{
+  path:"",
+  component:ProductsComponent
+},{
+  path:"payment-successfull",
+  component:PaySuccessComponent
+}];
 
-const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
