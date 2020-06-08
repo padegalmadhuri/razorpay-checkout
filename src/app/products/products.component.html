@@ -10,11 +10,11 @@
     <div *ngFor="let item of productData;index as i">
       <div class="card">
       <div class="card-header">
-        {{item.product_name}}|{{item.product}}
+        <strong>{{item.product_name|uppercase}}</strong>
         </div>
        <div class="card-body">
-        <p class="card-title">{{item.department}}</p>
-          <p class="card-text">Material:{{item.product_material}}</p>
+        <h3 class="card-title">{{item.department}}</h3>
+          <h4 class="card-text">Material: {{item.product_material}}</h4>
         <h3 class="card-text">{{item.product_price|currency:'INR'}}</h3>
         <button class="btn btn-primary" (click)="initPay(item.product_price,item.id)" value="Pay with RazorPay">Buy</button>
         </div>
